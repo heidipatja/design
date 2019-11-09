@@ -4,7 +4,7 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-kursrepo
 
@@ -12,17 +12,15 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-redovisa
 ---
-Om
+Om kursen
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+[FIGURE src=image/arbetsplats.jpg?w=400 class="right" caption="Heidis medhjälpare är en hejare på CSS."]
 
-Skriv några kloka ord om kursen?
+Kursen *Teknisk design och användbarhet* fokuserar på tekniker som används för att underlätta för användarvänlig design av webbplatser.
 
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+Kursen omfattar bland annat färglära och typografi, lagar och regler kring webbplatser, PHP-ramverk för design av webbplats, grid-baserad layout och CSS-konstruktioner för style med CSS/LESS/SASS.

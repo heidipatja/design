@@ -1,25 +1,23 @@
 ---
 title: "Min fina titel"
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
+
 ---
-Min me-sida i kursen design
+Me-sida i kursen design
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+[FIGURE src="image/heidi-patja.jpg?w=500" class="right" caption="Heidi i New York"]
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+Jag heter Heidi Patja och jag är 35 år och bor i Sundbyberg. Vanligtvis jobbar jag heltid på KTH Biblioteket i Stockholm, men just nu är jag tjänstledig på 80% för att lära mig roliga saker som t.ex. JavaScript och Design. Jag gillar problemlösning och har även ett visst estetiskt intresse, så programmering i kombination med vissa designinslag passar mig perfekt. Det ska bli jättekul att utvecklas inom båda delar.
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Jag är utbildad bibliotekarie, men har jobbat med diverse webbrelaterade saker i många år. I min nuvarande tjänst som systembibliotekarie ingår det att utveckla bibliotekets webbtjänster, men eftersom jag inte har kunnat några programmeringsspråk har min roll främst varit att ta fram skisser och specifikationer som därefter har implementerats av vår utvecklare. Eftersom jag lider av "kan själv"-syndromet har jag länge tänkt att det skulle vara kul att kunna fixa allt det där själv... och därför hamnade jag till slut på den här utbildningen.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
-
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
-
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+På min fritid gillar jag att vara aktiv och du kan ofta hitta mig längs olika vandringsleder eller susandes fram på min långfärdscykel. Mina favoritresmål just nu är Island, Norge och de svenska fjällen. Resorna kombinerar jag gärna med fotografering. Jag tycker också att det är viktigt att ligga i soffan och göra ingenting, vilket har lett till att jag följer alldeles för många tv-serier på HBO och Netflix. När jag var yngre målade jag mycket, men tyvärr räcker inte tiden riktigt till numera, så det har blivit vilande i några år nu. När jag umgås med mina vänner blir det mycket brädspel och en del biofilmer.

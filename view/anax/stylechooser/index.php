@@ -11,15 +11,15 @@ namespace Anax\View;
 
 
 
-?><h1>Stylechooser</h1>
-<p>Here you can select among the available styles and activate them.</p>
+?><h1>Styleväljare</h1>
+<p>Här kan du välja mellan och aktivera olika style sheets.</p>
 <form class="stylechooser" method="post" action="<?= url("style/update") ?>">
     <fieldset>
-        <legend>Stylechooser</legend>
+        <legend>Styleväljare</legend>
         <p>
-            <label for="stylechooser">Select the style to activate it:<br>
+            <label for="stylechooser">Välj en style för att aktivera den:<br>
                 <select name="stylechooser" onchange="form.submit();">
-                    <option value="none">No style is selected, using default.</option>
+                    <option value="none">Ingen style är vald, använder standardstylen.</option>
                     <?php foreach ($styles as $key => $value) :
                         $selected = $key === $activeStyle ? "selected=\"selected\"" : null;
                         ?>
@@ -29,18 +29,18 @@ namespace Anax\View;
             </label>
         </p>
         <?php if ($activeStyle) : ?>
-            <p>Here follows details on the current selected style.</p>
+            <p>Detaljer om stylen.</p>
             <table>
                 <tr>
-                    <th>Filename:</th>
+                    <th>Filnamn:</th>
                     <td><code><?= $activeStyle ?></code></td>
                 </tr>
                 <tr>
-                    <th>Short description:</th>
+                    <th>Kort beskrivning:</th>
                     <td><?= $activeShortDescription ?></td>
                 </tr>
                 <tr>
-                    <th>Long description:</th>
+                    <th>Lång beskrivning:</th>
                     <td><?= $activeLongDescription ?></td>
                 </tr>
             </table>
