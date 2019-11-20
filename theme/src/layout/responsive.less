@@ -1,0 +1,50 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media (max-width: 1200px) {
+    .inner-wrap-main,
+    .inner-wrap-breadcrumb {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .has-sidebar {
+        width: 100%;
+    }
+
+    .wrap-sidebar {
+        width: 100%;
+        float: none;
+    }
+
+    .region-header {
+        display: inline-grid;
+
+        &-col-2 {
+            display: none;
+        }
+
+        &-col-3 {
+            display: inline;
+        }
+    }
+
+    .footer-column {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .right {
+        padding: 0;
+        float: none;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
