@@ -1,6 +1,6 @@
 #### Validering av kod
 
-Klicka på länkarna för att se om sidan validerar:
+Klicka på länkarna för att se om sidan validerar.
 
 [HTML5](http://validator.w3.org/check/referer)  
 [CSS](http://jigsaw.w3.org/css-validator/check/referer)  

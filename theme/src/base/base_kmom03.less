@@ -1,0 +1,62 @@
+// /**
+//  * Base style to affect HTML elements on a general scale.
+//  */
+
+/* Base rules */
+
+* {
+    box-sizing: border-box;
+}
+
+/**
+* My own settings
+*/
+
+// Colors
+@bgColorHtml: #494949;
+@bgColorBody: #fff;
+@colorBody: #333;
+@linkColorText: #1e91f1;
+@linkColor: #333;
+@colorTypographyMark: #333;
+
+// Font-families
+@fontFamilyHeadings: @fontFamilyRaleway;
+@fontFamilyBody:     @fontFamilyOpenSans;
+@fontFamilyHeader: @fontFamilyRaleway;
+@fontFamilyCode:     "monospace";
+@fontFamilyLogo: @fontFamilyRockSalt;
+
+// Font-sizes
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+    font-size: 100%;
+}
+
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+    color: @colorBody;
+    background-color: @bgColorBody;
+    // font: 100.01%/1 @fontFamilyBody;
+}
+
+p {
+    color: @colorTypographyMark;
+}
+
+a {
+    text-decoration: none;
+    color: @linkColorText;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
