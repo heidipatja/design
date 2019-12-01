@@ -1,0 +1,188 @@
+/*!
+ * LESS version of the stylesheet for design kmom04.
+ *
+ * This stylesheet is for the design course and kmom04. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+@import "base/base_kmom04.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/grids_kmom04.less";
+
+ /**
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+@import "layout/layout_kmom04.less";
+@import "layout/responsive_kmom04.less";
+// @import "layout/regions.less";     // To add style for ?regions
+
+
+// Color scheme
+
+@funPink: #ffcfd6;
+@funDarkPink: #eab9c1;
+@funWhite: #fff;
+@funBlack: #333;
+@funOrange: #e25b0b;
+@funBrown: #42242d;
+
+
+
+
+
+
+// Colors
+@bgColorHtml: @funBrown;
+@bgColorSidebar: @funWhite;
+@bgColorBody: @funPink;
+@bgColorFooter: @funBrown;
+@bgColorMenu: @funBrown;
+@bgColorMain: @funPink;
+@bgColorWrapAll: @funPink;
+
+// Font colors
+@textColorHeadings: @funOrange;
+@textColor: @funBlack;
+@textColorFooter: @funWhite;
+@linkColorMenu: @funWhite;
+@textColorLogo: @funWhite;
+@linkColorText: @funBrown;
+@linkColor: #b94500;
+@linkColorToc: @funBlack;
+@linkHoverToc: @funWhite;
+
+// Font-families
+@fontFamilyHeadings: @fontFamilySigmar;
+@fontFamilyBody:     @fontFamilyVerdana;
+@fontFamilyHeader: @fontFamilyVerdana;
+@fontFamilyCode:     "monospace";
+@fontFamilyLogo: @fontFamilySigmar;
+
+// Font-sizes
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+//images
+
+.region-flash {
+    display: none;
+
+    & img {
+        display: none;
+    }
+}
+
+.region-footer h4 {
+    font-family: @fontFamilyOpenSans;
+    color: @funWhite;
+}
+
+.toc h4,
+.wrap-sidebar h4 {
+    .bgcolor(@funWhite);
+    padding-left: 0;
+}
+
+.outer-wrap-flash {
+    .bgcolor(@bgColorHtml);
+}
+
+.site-logo-text {
+    font-style: normal;
+}
+
+.outer-wrap-header {
+    margin-bottom: @magicNumber;
+}
+
+.author-byline {
+    display: none;
+}
+
+h1 {
+    font-size: 2.750em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    border: none;
+    color: @textColorHeadings;
+}
+
+.region-sidebar-left {
+
+    & .toc {
+        margin-block-start: 0;
+
+        & h4 {
+            display: none;
+        }
+    }
+}
+
+.region-main,
+.region-sidebar-left,
+.region-sidebar-right {
+    box-shadow: @magicNumber @magicNumber @funDarkPink;
+    background-color: @funWhite;
+    padding: @magicNumber;
+    margin-bottom: @magicNumber * 3;
+}
+
+.outer-wrap-header {
+    border-bottom: @magicNumber solid @funOrange;
+}
+
+.outer-wrap-footer,
+.outer-wrap-header {
+    border-top: @magicNumber solid @funOrange;
+}

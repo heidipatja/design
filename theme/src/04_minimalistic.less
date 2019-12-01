@@ -1,0 +1,151 @@
+/*!
+ * LESS version of the stylesheet for design kmom04.
+ *
+ * This stylesheet is for the design course and kmom04. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+@import "base/base_kmom04.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/grids_kmom04.less";
+
+ /**
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+@import "layout/layout_kmom04.less";
+@import "layout/responsive_kmom04.less";
+
+
+// Color scheme
+@minWhite: #fff;
+@minLighestGray: #fafafa;
+@minLightGray: #ececec;
+@minMidGray: #535353;
+@minDarkGray: #333;
+@minGreen: #31684d;
+@minGreenLink: #007b3f;
+
+// Colors
+@bgColorHtml: @minMidGray;
+@bgColorBody: @minWhite;
+@bgColorFooter: @minMidGray;
+@bgColorSidebar: @minLightGray;
+@bgColorMenu: @minGreen;
+@bgColorMain: @minLighestGray;
+@bgColorWrapAll: @minLighestGray;
+@colorBody: @minDarkGray;
+@textColorHeadings: @minDarkGray;
+@linkColorText: @minGreenLink;
+@linkColor: @minDarkGray;
+@linkHoverToc: @minLighestGray;
+
+@textColor: @minDarkGray;
+@textColorFooter: @minWhite;
+@linkColorMenu: @minWhite;
+@textColorLogo: @minDarkGray;
+@linkColorToc: @minDarkGray;
+
+// Font-families
+@fontFamilyHeadings: @fontFamilySourceSans;
+@fontFamilyBody:     @fontFamilySourceSans;
+@fontFamilyHeader: @fontFamilyRaleway;
+@fontFamilyLogo: @fontFamilySourceSans;
+
+// Font-sizes
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+// Wrap size
+@innerWrapWidth: 800px;
+
+
+// bg image
+.inner-wrap-header {
+    background-repeat: no-repeat;
+    // background-image: url("https://images.unsplash.com/photo-1527176930608-09cb256ab504?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1453&q=80&h=550");
+    background-image: url("/dbwebb/design/me/redovisa/htdocs/image/mini.jpg");
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    & img {
+        display: none;
+    }
+}
+
+
+// modifications
+
+h1 {
+    text-transform: uppercase;
+}
+
+.outer-wrap-flash,
+.author-byline {
+    display: none;
+}
+
+.figure.right {
+    display: none;
+}
+
+.region-header {
+
+    &-col-2 {
+       display: none;
+    }
+
+    &-col-3 {
+       display: inline;
+    }
+}
+
+.site-logo-text {
+    font-style: normal;
+}

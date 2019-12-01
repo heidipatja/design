@@ -1,0 +1,104 @@
+/*!
+ * LESS version of the stylesheet for design kmom04.
+ *
+ * This stylesheet is for the design course and kmom04. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+@import "base/base_kmom04.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/grids_kmom04.less";
+
+ /**
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+@import "layout/layout_kmom04.less";
+@import "layout/responsive_kmom04.less";
+
+// Colors
+
+@baseWhite: #fff;
+@baseYellow: #f8be00;
+@baseLighterGray: #f6f6f6;
+@baseLightGray: #eee;
+@baseMidGray: #666;
+@baseDarkGray: #494949;
+@baseAlmostBlack: #333;
+@baseBlack: #222;
+
+// Colors
+@bgColorHtml: @baseDarkGray;
+@bgColorSidebar: #eee;
+@bgColorBody: @baseWhite;
+@bgColorFooter: @baseDarkGray;
+@bgColorMain: @baseWhite;
+@bgColorWrapAll: @baseWhite;
+@colorBody: @baseAlmostBlack;
+@bgColorMenu: @baseBlack;
+
+// Font colors
+@textColorHeadings: @baseAlmostBlack;
+@textColorFooter: @baseWhite;
+@linkColorMenu: @baseWhite;
+@textColorLogo: @baseWhite;
+@linkColorText: #1e91f1;
+@linkColor: @baseAlmostBlack;
+@colorTypographyMark: @baseAlmostBlack;
+@linkColorToc: @baseAlmostBlack;
+@linkHoverToc: @baseWhite;
+
+// Font-families
+@fontFamilyHeadings: @fontFamilyRaleway;
+@fontFamilyBody:     @fontFamilyOpenSans;
+@fontFamilyHeader: @fontFamilyRaleway;
+@fontFamilyCode:     "monospace";
+@fontFamilyLogo: @fontFamilyRockSalt;
+
+// Font-sizes
+@magicNumber:  24px;
+@fontSizeBody: 16px;

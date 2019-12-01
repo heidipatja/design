@@ -1,0 +1,140 @@
+/*!
+ * LESS version of the stylesheet for design kmom04.
+ *
+ * This stylesheet is for the design course and kmom04. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+@import "base/base_kmom04.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/grids_kmom04.less";
+
+ /**
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+@import "layout/layout_kmom04.less";
+@import "layout/responsive_kmom04.less";
+
+
+
+// Color scheme
+@dAlmostWhite: #bdbdbd;
+@dLightGray: #acacac;
+@dMidGray: #535353;
+@dDarkGray: #242424;
+@dDarkerGray: #1a1a1a;
+@dAlmostBlack: #121212;
+@dRed: #951717;
+@dLighterRed: #d64e4f;
+
+
+// Colors
+@bgColorHtml: @dDarkerGray;
+@bgColorBody: @dLightGray;
+@bgColorFooter: @dDarkerGray;
+@bgColorMain: @dAlmostBlack;
+@bgColorWrapAll: @dAlmostBlack;
+@bgColorMenu: @dAlmostBlack;
+@bgColorSidebar: @dRed;
+
+@colorBody: @dLightGray;
+@textColorHeadings: @dLightGray;
+@linkColorText: @dLightGray;
+@linkColor: @dLightGray;
+@linkColorToc: @dLightGray;
+@linkHoverToc: @dAlmostBlack;
+
+@textColor: @dLightGray;
+@textColorFooter: @dLightGray;
+@linkColorMenu: @dAlmostWhite;
+@textColorLogo: @dAlmostWhite;
+
+
+// Font-families
+@fontFamilyHeadings: @fontFamilyRaleway;
+@fontFamilyBody:     @fontFamilyOpenSans;
+@fontFamilyHeader: @fontFamilyRaleway;
+@fontFamilyCode:     "monospace";
+@fontFamilyLogo: @fontFamilyRaleway;
+
+// Font-sizes
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+// Wrap size
+@innerWrapWidth: 1100px;
+
+
+
+// Images
+
+.region-flash {
+    background-repeat: no-repeat;
+    background-image: url(/dbwebb/design/me/redovisa/htdocs/image/dark-plant2.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    & img {
+        display: none;
+    }
+}
+
+.figure.right {
+    opacity: 0.8;
+}
+
+.author-byline {
+    display: none;
+}
+
+.site-logo-text {
+    font-style: normal;
+}
+
+article a {
+    text-decoration: underline;
+}
