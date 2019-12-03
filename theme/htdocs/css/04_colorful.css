@@ -5976,7 +5976,7 @@ article ul {
 }
 .region-flash {
   background-repeat: no-repeat;
-  background-image: url(/dbwebb/design/me/redovisa/htdocs/image/colorful.jpg);
+  background-image: url("http://www.student.bth.se/~hepa19/dbwebb-kurser/design/me/redovisa/htdocs/img/colorful.jpg");
   height: 270px;
   width: 1100px;
   margin: 24px auto 0;

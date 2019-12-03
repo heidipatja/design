@@ -5976,7 +5976,7 @@ article ul {
 }
 .inner-wrap-header {
   background-repeat: no-repeat;
-  background-image: url("/dbwebb/design/me/redovisa/htdocs/image/mini.jpg");
+  background-image: url("http://www.student.bth.se/~hepa19/dbwebb-kurser/design/me/redovisa/htdocs/img/mini.jpg");
   height: 450px;
   width: 100%;
   background-size: cover;

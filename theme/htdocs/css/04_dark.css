@@ -5976,7 +5976,7 @@ article ul {
 }
 .region-flash {
   background-repeat: no-repeat;
-  background-image: url(/dbwebb/design/me/redovisa/htdocs/image/dark-plant2.jpg);
+  background-image: url("http://www.student.bth.se/~hepa19/dbwebb-kurser/design/me/redovisa/htdocs/img/dark-plant2.jpg");
   height: 300px;
   width: 100%;
   background-size: cover;
