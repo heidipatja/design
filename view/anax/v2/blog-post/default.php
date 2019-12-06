@@ -35,7 +35,7 @@ foreach ($author as $key => $who) {
     $authorStr .= $part . ", ";
 }
 $authorStr = substr($authorStr, 0, -2);
-$byStr = t("By !AUTHORS.", ["!AUTHORS" => $authorStr]);
+$byStr = t("Av !AUTHORS.", ["!AUTHORS" => $authorStr]);
 
 
 
@@ -45,7 +45,7 @@ $header = <<<EOD
     <h1\$1>\$2</h1>
     <p class="meta-header">
     <adress class="author">$byStr</adress>
-    $pubStr <time pubdate datetime="$published">$published</time>.
+    Publicerad <time pubdate datetime="$published">$published</time>.
     </p>
 </header>
 EOD;

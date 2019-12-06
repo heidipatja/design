@@ -70,8 +70,18 @@ return [
                         "url" => "rapport/fargschema",
                         "title" => "Färgschema",
                     ],
+                    [
+                    "text" => "Laddningstid",
+                    "url" => "rapport/laddningstid",
+                    "title" => "Laddningstid",
+                    ],
                 ],
             ],
+        ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Blogg.",
         ],
         [
             "text" => "Om",

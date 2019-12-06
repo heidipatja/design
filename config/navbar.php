@@ -23,9 +23,4 @@ return [
         "url" => "about",
         "title" => "About this site.",
     ]
-    [
-        "text" => "Fun",
-        "url" => "fun",
-        "title" => "Fun theme",
-    ]
 ];

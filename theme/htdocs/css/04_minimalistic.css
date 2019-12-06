@@ -4994,34 +4994,6 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 /**
  * Typographic font families to choose from.
  */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Rock Salt';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Rock Salt Regular'), local('RockSalt-Regular'), url(https://fonts.gstatic.com/s/rocksalt/v10/MwQ0bhv11fWD6QsAVOZrt0M_.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sigmar One';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Sigmar One Regular'), local('SigmarOne-Regular'), url(https://fonts.gstatic.com/s/sigmarone/v10/co3DmWZ8kjZuErj9Ta3do6Tpow.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
-}
 /**
  * Typographic defaults.
  */
@@ -5950,10 +5922,7 @@ article ul {
     line-height: 1.5em;
   }
 }
-@media screen and (max-width: 850px) {
-  .footer-column {
-    display: inline;
-  }
+@media screen and (max-width: 1000px) {
   .region-header {
     display: inline-grid;
   }
@@ -5961,6 +5930,11 @@ article ul {
     display: none;
   }
   .region-header-col-3 {
+    display: inline;
+  }
+}
+@media screen and (max-width: 850px) {
+  .footer-column {
     display: inline;
   }
   .site-logo-text {
@@ -5973,6 +5947,27 @@ article ul {
   .figure.right img {
     width: 100%;
   }
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
 }
 .inner-wrap-header {
   background-repeat: no-repeat;

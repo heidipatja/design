@@ -19,14 +19,14 @@ if (isset($class)) {
 // Prepare title
 $title = isset($title) && !empty($title)
     ? $title
-    : t("Current posts");
+    : t("Senaste inlägg");
 
 
 
 ?><div <?= classList($classes) ?>>
 
     <h4><?= $title ?></h4>
-    
+
     <ul class="toc">
         <?php foreach ($toc as $route => $item) : ?>
         <li><a href="<?= url($route) ?>"><?= $item["title"] ?></a></li>

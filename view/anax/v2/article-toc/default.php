@@ -22,14 +22,14 @@ if (isset($class)) {
 // Prepare title
 $title = isset($title) && !empty($title)
     ? $title
-    : t("Table Of Content");
+    : t("Innehåll");
 
 
 
 ?><div <?= classList($classes) ?>>
 
     <h4><?= $title ?></h4>
-    
+
     <ul class="toc">
         <?php foreach ($articleToc as $item) : ?>
         <li class="level-<?= $item["level"] ?>"><a href="#<?= $item["id"] ?>"><?= $item["title"] ?></a></li>

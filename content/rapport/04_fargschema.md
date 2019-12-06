@@ -53,7 +53,7 @@ Volvo har ett eget typsnitt, Volvo Novum, som används i alla rubriknivåer och 
 
 ####Bilder####
 
-[FIGURE src=image/volvocars.jpg class="report" caption="Volvo cars startsida."]
+[FIGURE src="image/volvocars.jpg&w=387" class="center" caption="Volvo cars startsida."]
 
 
 ###Lamborghini###
@@ -79,8 +79,8 @@ Sidan använder genomgående sans serif-fonter där rubrikerna har Roboto och br
 
 ####Bilder####
 
-[FIGURE src=image/lamborghini2.jpg class="report" caption="Lamborghini startsida."]
-[FIGURE src=image/lamborghini.jpg class="report" caption="Lamborghini undersida."]
+[FIGURE src="image/lamborghini2.jpg&w=387" class="center" caption="Lamborghini startsida."]
+[FIGURE src="image/lamborghini.jpg&w=387" class="center" caption="Lamborghini undersida."]
 
 
 
@@ -105,7 +105,7 @@ Mini har egna typsnitt, Mini-Regular och Mini-Serif-Regular. Mini-Serif-Regular 
 
 ####Bilder####
 
-[FIGURE src=image/minicars.jpg class="report" caption="Minis startsida"]
+[FIGURE src="image/minicars.jpg&w=387" class="center" caption="Minis startsida"]
 
 Analys
 -----------------------

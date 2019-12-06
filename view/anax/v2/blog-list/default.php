@@ -18,7 +18,7 @@ if (isset($class)) {
 // Labels
 $readmoreLabel = isset($label["readmore"])
     ? $label["readmore"]
-    : t("Read more »");
+    : t("Läs mer »");
 
 // Common date format
 $dateFormat = isset($dateFormat) ? $dateFormat : "m/d/Y";
@@ -39,13 +39,13 @@ $dateFormat = isset($dateFormat) ? $dateFormat : "m/d/Y";
         $publishedFormatted = date($dateFormat, strtotime($published));
         //$datetime = $item["published"];
         //$date = $item["published"];
-        
+
         $category = isset($item["category"]) ? $item["category"] : null;
 
         // Format the content
         $urlToPost = url($route);
         $excerpt = $item["excerpt"];
-        
+
         // Wrap h1 with link to article
         $excerpt = wrapElementContentWithStartEnd(
             $excerpt,
@@ -60,9 +60,9 @@ $dateFormat = isset($dateFormat) ? $dateFormat : "m/d/Y";
         ?><section <?= classList("blog-list-item") ?>>
 
             <span class="meta-header"><time datetime="<?= $published ?>"><?= $publishedFormatted ?></time></span>
-            
+
             <?= $excerpt ?>
-            
+
             <p class="readmore"><a href="<?= $urlToPost ?>"><?= $readmoreLabel ?></a></p>
 
             <?php
