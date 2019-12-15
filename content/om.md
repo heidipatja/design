@@ -19,7 +19,7 @@ views:
 Om kursen
 =========================
 
-[FIGURE src=image/arbetsplats.jpg?w=400 class="right" caption="Heidis medhjälpare är en hejare på CSS."]
+[FIGURE src=image/arbetsplats.jpg?w=400 class="left border w50" caption="Heidis medhjälpare."]
 
 Kursen *Teknisk design och användbarhet* fokuserar på tekniker som används för att underlätta för användarvänlig design av webbplatser.
 

@@ -37,10 +37,10 @@ Brännvidd: 48mm
 Alternativa filter {#Alternativa}
 -----------------------------------
 
-Negativfiltret är lite oolt och spooky. Passar kanske en dark theme? Det svartvita filtret ger två varianter som t.ex. kan användas på en mer minimalistisk sida.
+Negativfiltret är lite coolt och spooky. Passar kanske en dark theme? Det svartvita filtret ger två varianter som t.ex. kan användas på en mer minimalistisk sida.
 
 [FIGURE src="image/blogg/wanaka_tree.jpg?w=387&&aspect-ratio=!3:2&crop-to-fit&area=0,35,0,0&f=negate&f1=contrast,-20" caption="Negate och contrast" class="left w50"]
 
-[FIGURE src="image/blogg/wanaka_tree.jpg?w=387&&aspect-ratio=!3:2&crop-to-fit&area=0,35,0,0&f=grayscale&f1=contrast,-30" caption="Grayscale & contrast" class="left  w50"]
+[FIGURE src="image/blogg/wanaka_tree.jpg?w=387&&aspect-ratio=!3:2&crop-to-fit&area=0,35,0,0&f=grayscale&f1=contrast,-30" caption="Grayscale & contrast" class="left w50"]
 
 [FIGURE src="image/blogg/wanaka_tree.jpg?w=775&&aspect-ratio=3:2&crop-to-fit&area=23,0,5,0&f=grayscale&f1=contrast,-20&convolve=sharpen" caption="Grayscale & contrast landscape)" class="center"]
