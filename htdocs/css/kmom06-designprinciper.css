@@ -5525,7 +5525,8 @@ hr::after {
   margin-right: 0.52083333%;
 }
 /* breadcrumbs & next previous */
-.region-breadcrumb {
+.region-breadcrumb,
+.region-flash-message {
   display: inline;
   float: left;
   width: 98.95833333%;
@@ -6268,4 +6269,9 @@ figure.border figcaption {
 .toc .selected li a:hover::after,
 .toc .selected-parent li a:hover::after {
   width: 100%;
+}
+.region-flash-message {
+  border: 1px solid #666;
+  margin-top: 24px;
+  padding: 24px;
 }

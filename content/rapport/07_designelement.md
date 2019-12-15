@@ -5,7 +5,7 @@ Designelement
 
 I rapporten beskrivs de designelement som har använts i temat *06_designelement*.
 
-[Byt till temat 06_designelement](http://www.student.bth.se/~hepa19/dbwebb-kurser/design/me/redovisa/htdocs/rapport/designelement?style=06_designelement)
+[Byt till temat 06_designelement](http://www.student.bth.se/~hepa19/dbwebb-kurser/design/me/redovisa/htdocs/rapport/designelement?style=kmom06-designelement)
 
 
 Definitioner

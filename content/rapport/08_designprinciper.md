@@ -5,7 +5,7 @@ Designprinciper
 
 I rapporten beskrivs de designprinciper som har använts i temat *06_designprinciper*. Som grund har jag använt temat som jag har arbetat med kmom01-kmom05 för att se om det finns små justeringar som kan lyfta temat ytterligare.
 
-[Byt till temat 06_designprinciper](http://www.student.bth.se/~hepa19/dbwebb-kurser/design/me/redovisa/htdocs/rapport/designelement?style=06_designprinciper)
+[Byt till temat 06_designprinciper](http://www.student.bth.se/~hepa19/dbwebb-kurser/design/me/redovisa/htdocs/rapport/designelement?style=kmom06-designprinciper)
 
 
 Definitioner

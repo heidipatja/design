@@ -5456,7 +5456,8 @@ hr::after {
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
-.region-breadcrumb {
+.region-breadcrumb,
+.region-flash-message {
   display: inline;
   float: left;
   width: 90.625%;
@@ -6160,4 +6161,10 @@ figure img {
 }
 .author-byline {
   background-color: #f1f5f6;
+}
+.region-flash-message {
+  background-color: #f1f5f6;
+  border: 1px dashed #666;
+  margin-top: 24px;
+  padding: 24px;
 }
