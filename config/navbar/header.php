@@ -89,6 +89,16 @@ return [
                         "url" => "rapport/designprinciper",
                         "title" => "Tema - Designprinciper",
                     ],
+                    [
+                        "text" => "10 Design",
+                        "url" => "rapport/webbplatsdesign",
+                        "title" => "Webbplatsdesign",
+                    ],
+                    [
+                        "text" => "10 Responsivitet",
+                        "url" => "rapport/designp-och-webbplatser",
+                        "title" => "Responsivitet",
+                    ],
                 ],
             ],
         ],

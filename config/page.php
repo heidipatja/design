@@ -19,7 +19,7 @@ return [
             "lang" => "sv",
             "stylesheets" => [
                 // Change here to set another default stylesheet
-                "css/kmom06-designprinciper.min.css",
+                "css/kmom10.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",

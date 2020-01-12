@@ -1,0 +1,228 @@
+/*!
+ * LESS version of the stylesheet for design kmom10
+ *
+ * This stylesheet is for the design course and kmom10
+ */
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+@import "module/stylechooser.less";  // Just an example module
+
+
+
+
+/**
+ * Font Awesome.
+ */
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * A responsive menu.
+ */
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+ * My own settings, not currently in their own module.
+ */
+
+/**
+* Import the typographic grid.
+*/
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+@import "base/base_kmom05.less";
+
+/**
+* Import the vertical grid.
+*/
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/grids_kmom05.less";
+
+ /**
+  * Layout style for general structure of header, navbar, main, footer
+  * and other regions of the page including route specific styles.
+  */
+@import "layout/layout_kmom05.less";
+@import "layout/responsive_kmom05.less";
+
+// Colors
+
+@baseWhite: #fff;
+@baseYellow: #f8be00;
+@baseLighterGray: #f6f6f6;
+@baseLightGray: #e6e6e6;
+@baseMidGray: #666;
+@baseDarkGray: #494949;
+@baseAlmostBlack: #333;
+@baseBlack: #222;
+@green: #017d67;
+@yellow: #f4ba00;
+@transparentWhite: rgba(255, 255, 255, 0.94);
+
+// Colors
+@bgColorHtml: @baseDarkGray;
+@bgColorSidebar: @baseLightGray;
+@bgColorBody: @baseWhite;
+@bgColorFooter: @baseDarkGray;
+@bgColorMain: @baseWhite;
+@bgColorWrapAll: @baseWhite;
+@colorBody: @baseAlmostBlack;
+@bgColorMenu: @baseBlack;
+
+// Fonts
+
+@textColorHeadings: @baseAlmostBlack;
+@textColorFooter: @baseWhite;
+@linkColorMenu: @baseWhite;
+@textColorLogo: @baseWhite;
+@linkColorText: @green;
+@linkColor: @baseAlmostBlack;
+@colorTypographyMark: @baseAlmostBlack;
+@linkColorToc: @baseAlmostBlack;
+@linkHoverToc: @baseWhite;
+
+// Font-families
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt|Raleway&display=swap');
+@fontFamilyRockSalt:          "Rock Salt", Raleway, Arial, sans-serif, cursive;
+@fontFamilyRaleway:           Raleway, Arial, "Helvetica Neue", Helvetica, sans-serif;
+@fontFamilyOpenSans:         "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@fontFamilyHeadings: @fontFamilyRaleway;
+@fontFamilyBody:     @fontFamilyOpenSans;
+@fontFamilyHeader: @fontFamilyRaleway;
+@fontFamilyCode:     "monospace";
+@fontFamilyLogo: @fontFamilyRockSalt;
+
+// Font-sizes
+@magicNumber:  24px;
+@fontSizeBody: 16px;
+
+@maxButtonColor:            @baseWhite;
+
+
+
+
+.breadcrumb-list a, .next a, .previous a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-position: underline;
+        color: @green;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+    }
+}
+
+.outer-wrap-main,
+.outer-wrap-breadcrumb,
+.outer-wrap-flash-message {
+    background-color: @transparentWhite;
+}
+
+/* Figures */
+figure:hover img {
+	opacity: 1;
+	-webkit-animation: flash 2s;
+	animation: flash 2s;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+figure.border {
+    padding: @magicNumber;
+    margin-top: 16px;
+    max-width: 40%;
+    box-shadow: 0px 3px 10px 3px #cdcdcd;
+    background-color: @baseWhite;
+
+    & img {
+        outline: 0;
+    }
+
+    &.right {
+        transform: rotate(2deg);
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+    }
+
+    &.left {
+        transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
+        -moz-transform: rotate(-2deg);
+    }
+
+    & figcaption {
+        font-family: @fontFamilyRockSalt;
+        font-size: 0.8em;
+        display: block;
+        margin-top: @magicNumber / 2;
+    }
+}
+
+/* Selected */
+
+.rm-default li a:hover,
+.rm-default li li a:hover {
+    text-decoration: none;
+    // display: inline-block;
+}
+
+.rm-default li li a {
+    // display: block;
+    min-width: 0em;
+}
+
+.rm-default li ul {
+    // display: block;
+    min-width: 10em;
+    background-color: @baseBlack;
+    text-align: center;
+}
+
+.rm-default li a,
+.rm-default li li a {
+    // display: inline-block;
+}
+
+.region-flash-message {
+    border: 1px solid #666;
+    margin-top: @magicNumber;
+    padding: @magicNumber;
+}
