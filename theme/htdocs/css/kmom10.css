@@ -6152,14 +6152,10 @@ figure.border figcaption {
   margin-top: 12px;
 }
 /* Selected */
-.rm-default li a:hover,
-.rm-default li li a:hover {
-  text-decoration: none;
-}
-.rm-default li li a {
+.rm-desktop li li a {
   min-width: 0em;
 }
-.rm-default li ul {
+.rm-desktop li ul {
   min-width: 10em;
   background-color: #222;
   text-align: center;
@@ -6168,4 +6164,13 @@ figure.border figcaption {
   border: 1px solid #666;
   margin-top: 24px;
   padding: 24px;
+}
+@media screen and (max-width: 733px) {
+  figure.border {
+    max-width: 100%;
+  }
+  figure.border.right,
+  figure.border.left {
+    transform: rotate(0);
+  }
 }

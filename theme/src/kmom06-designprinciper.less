@@ -237,7 +237,7 @@ figure.border {
     min-width: 0em;
 }
 
-.rm-default li ul {
+.rm-desktop li ul {
     // display: block;
     min-width: 10em;
     background-color: @baseBlack;
@@ -249,7 +249,7 @@ figure.border {
     // display: inline-block;
 }
 
-.rm-default li a {
+.rm-desktop li a {
 
     // display: inline-block;
 
@@ -273,8 +273,8 @@ figure.border {
     }
 }
 
-.rm-default .selected a::after,
-.rm-default .selected-parent a::after {
+.rm-desktop .selected a::after,
+.rm-desktop .selected-parent a::after {
     content: '';
     width: 100%;
     height: 1px;
@@ -289,8 +289,8 @@ figure.border {
     }
 }
 
-.rm-default .selected li a,
-.rm-default .selected-parent li a {
+.rm-desktop .selected li a,
+.rm-desktop .selected-parent li a {
 
     &::after {
         width: 0%;
@@ -362,4 +362,15 @@ figure.border {
     border: 1px solid #666;
     margin-top: @magicNumber;
     padding: @magicNumber;
+}
+
+@media screen and (max-width: 733px) {
+    figure.border {
+        max-width: 100%;
+
+        &.right,
+        &.left {
+            transform: rotate(-0);
+        }
+    }
 }

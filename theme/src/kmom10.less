@@ -198,31 +198,29 @@ figure.border {
 
 /* Selected */
 
-.rm-default li a:hover,
-.rm-default li li a:hover {
-    text-decoration: none;
-    // display: inline-block;
-}
-
-.rm-default li li a {
-    // display: block;
+.rm-desktop li li a {
     min-width: 0em;
 }
 
-.rm-default li ul {
-    // display: block;
+.rm-desktop li ul {
     min-width: 10em;
     background-color: @baseBlack;
     text-align: center;
-}
-
-.rm-default li a,
-.rm-default li li a {
-    // display: inline-block;
 }
 
 .region-flash-message {
     border: 1px solid #666;
     margin-top: @magicNumber;
     padding: @magicNumber;
+}
+
+@media screen and (max-width: 733px) {
+    figure.border {
+        max-width: 100%;
+
+        &.right,
+        &.left {
+            transform: rotate(-0);
+        }
+    }
 }

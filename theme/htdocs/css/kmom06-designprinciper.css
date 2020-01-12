@@ -6179,12 +6179,12 @@ figure.border figcaption {
 .rm-default li li a {
   min-width: 0em;
 }
-.rm-default li ul {
+.rm-desktop li ul {
   min-width: 10em;
   background-color: #222;
   text-align: center;
 }
-.rm-default li a::after {
+.rm-desktop li a::after {
   content: '';
   width: 0%;
   height: 1px;
@@ -6195,14 +6195,14 @@ figure.border figcaption {
   -moz-transition: 0;
   text-decoration: none;
 }
-.rm-default li a:hover::after {
+.rm-desktop li a:hover::after {
   width: 100%;
   transition: 1s;
   -webkit-transform: 1s;
   -moz-transform: 1s;
 }
-.rm-default .selected a::after,
-.rm-default .selected-parent a::after {
+.rm-desktop .selected a::after,
+.rm-desktop .selected-parent a::after {
   content: '';
   width: 100%;
   height: 1px;
@@ -6212,16 +6212,16 @@ figure.border figcaption {
   -moz-transition: 1s;
   text-decoration: none;
 }
-.rm-default .selected a::after::after,
-.rm-default .selected-parent a::after::after {
+.rm-desktop .selected a::after::after,
+.rm-desktop .selected-parent a::after::after {
   width: 100%;
 }
-.rm-default .selected li a::after,
-.rm-default .selected-parent li a::after {
+.rm-desktop .selected li a::after,
+.rm-desktop .selected-parent li a::after {
   width: 0%;
 }
-.rm-default .selected li a:hover::after,
-.rm-default .selected-parent li a:hover::after {
+.rm-desktop .selected li a:hover::after,
+.rm-desktop .selected-parent li a:hover::after {
   width: 100%;
 }
 .toc a {
@@ -6274,4 +6274,13 @@ figure.border figcaption {
   border: 1px solid #666;
   margin-top: 24px;
   padding: 24px;
+}
+@media screen and (max-width: 733px) {
+  figure.border {
+    max-width: 100%;
+  }
+  figure.border.right,
+  figure.border.left {
+    transform: rotate(0);
+  }
 }

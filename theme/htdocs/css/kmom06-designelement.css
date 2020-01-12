@@ -5803,7 +5803,7 @@ figure.figure-codepen {
   background-color: #fafafa;
 }
 .inner-wrap {
-  background-color: #fff;
+  background-color: transparent;
 }
 .inner-wrap-main {
   min-height: 500px;
@@ -6052,6 +6052,18 @@ article ol {
 @media screen and (max-width: 850px) {
   .footer-column {
     display: inline;
+  }
+  .region-header {
+    display: inline-grid;
+  }
+  .region-header-col-2 {
+    display: none;
+  }
+  .region-header-col-3 {
+    display: inline;
+  }
+  .site-logo-text {
+    top: 0;
   }
 }
 @font-face {

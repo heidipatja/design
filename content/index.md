@@ -14,7 +14,7 @@ views:
 Me-sida i kursen design
 =========================
 
-[FIGURE src="image/heidi-patja.jpg?w=500" class="right border w50" caption="Heidi i New York"]
+[FIGURE src="image/heidi-patja.jpg?w=500" class="right w50 border" caption="Heidi i New York"]
 
 Jag heter Heidi Patja och jag är bosatt i Sundbyberg och följer därmed programmet på distans. Vanligtvis jobbar jag heltid på KTH Biblioteket i Stockholm, men just nu är jag tjänstledig på 80% för att lära mig roliga saker som t.ex. JavaScript och Design. Jag gillar problemlösning och har även ett visst estetiskt intresse, så programmering i kombination med vissa designinslag passar mig perfekt. Det ska bli jättekul att utvecklas inom båda delar.
 
